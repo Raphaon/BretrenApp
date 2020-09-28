@@ -6,26 +6,113 @@
 <section class="content">
   <div class="row">
     <!-- left column -->
-    <div class="col-md-6">
+    <div class="col-md-12">
       <!-- general form elements -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
       <div class="box box-primary">
         <div class="box-header with-border">
-          <h3 class="box-title">Quick Example</h3>
+          <h3 class="box-title"> New Member</h3>
         </div>
         <!-- /.box-header -->
         <!-- form start -->
-        <form role="form">
+
+        <form role="form" method="POST" >
+            {{ csrf_field() }}
+
           <div class="box-body">
             <div class="form-group">
-              <label for="exampleInputEmail1">Email address</label>
+              <label for="matric">Matricule</label>
+              <input type="text"  readonly class="form-control" id="matric" placeholder="Enter email">
+            </div>
+
+            <div class="form-group">
+              <label for="exampleInputEmail1">Name</label>
+              <input type="text" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
+            </div>
+            <div class="form-group">
+              <label for="exampleInputEmail1">Surname</label>
+              <input type="text" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
+            </div>
+            <div class="form-group">
+              <label for="exampleInputEmail1">Date of Birth</label>
+              <input type="text" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
+            </div>
+            <div class="form-group">
+              <label for="exampleInputEmail1">Place of Birth</label>
+              <input type="text" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
+            </div>
+            <div class="form-group">
+              <label for="exampleInputEmail1">Father Name</label>
+              <input type="text" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
+            </div>
+            <div class="form-group">
+              <label for="exampleInputEmail1">Father Surname</label>
+              <input type="text" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
+            </div>
+            <div class="form-group">
+              <label for="exampleInputEmail1">Mother Name</label>
+              <input type="text" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
+            </div>
+            <div class="form-group">
+              <label for="exampleInputEmail1">Mother Surname</label>
+              <input type="text" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
+            </div>
+
+            <div class="form-group">
+              <label for="exampleInputEmail1">Sexe</label>
+              <input type="text" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
+            </div>
+            <div class="form-group">
+              <label for="exampleInputEmail1">Profession</label>
+              <input type="text" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
+            </div>
+            <div class="form-group">
+              <label for="exampleInputEmail1">Phone Number</label>
+              <input type="text" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
+            </div>
+            <div class="form-group">
+              <label for="exampleInputEmail1">email</label>
               <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
             </div>
+            <div class="form-group">
+              <label for="exampleInputEmail1">Conversion Date</label>
+              <input type="text" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
+            </div>
+
+            <div class="form-group">
+              <label for="exampleInputEmail1">Picture </label>
+              <input type="text" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
+            </div>
+
+            <div class="form-group">
+              <label for="exampleInputEmail1">Username </label>
+              <input type="text" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
+            </div>
+
             <div class="form-group">
               <label for="exampleInputPassword1">Password</label>
               <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
             </div>
             <div class="form-group">
-              <label for="exampleInputFile">File input</label>
+              <label for="exampleInputFile">Picture</label>
               <input type="file" id="exampleInputFile">
 
               <p class="help-block">Example block-level help text here.</p>
@@ -43,27 +130,19 @@
           </div>
         </form>
       </div>
-      <!-- /.box -->
 
-      <!-- Form Element sizes -->
-      <div class="box box-success">
-        <div class="box-header with-border">
-          <h3 class="box-title">Different Height</h3>
-        </div>
-        <div class="box-body">
-          <input class="form-control input-lg" type="text" placeholder=".input-lg">
-          <br>
-          <input class="form-control" type="text" placeholder="Default input">
-          <br>
-          <input class="form-control input-sm" type="text" placeholder=".input-sm">
-        </div>
-        <!-- /.box-body -->
-      </div>
-      <!-- /.box -->
 
+
+
+
+
+
+
+
+      <!-- /.box -->
       <div class="box box-danger">
         <div class="box-header with-border">
-          <h3 class="box-title">Different Width</h3>
+          <h3 class="box-title">Nouveau Membre </h3>
         </div>
         <div class="box-body">
           <div class="row">
@@ -81,11 +160,40 @@
         <!-- /.box-body -->
       </div>
       <!-- /.box -->
+      <!-- Form Element sizes -->
+      <div class="box box-success">
+        <div class="box-header with-border">
+          <h3 class="box-title">Different Height</h3>
+        </div>
+        <div class="box-body">
+          <input class="form-control input-lg" type="text" placeholder=".input-lg">
+          <br>
+          <input class="form-control" type="text" placeholder="Default input">
+          <br>
+          <input class="form-control input-sm" type="text" placeholder=".input-sm">
+        </div>
+        <!-- /.box-body -->
+      </div>
+      <!-- /.box -->
 
-      <!-- Input addon -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      <!-- Formulaire d'ajour d'un nouveau membre -->
       <div class="box box-info">
         <div class="box-header with-border">
-          <h3 class="box-title">Input Addon</h3>
+          <h3 class="box-title">Nouveau Membre </h3>
         </div>
         <div class="box-body">
           <div class="input-group">
@@ -383,6 +491,15 @@
         </div>
         <!-- /.box-body -->
       </div>
+
+
+
+
+
+
+
+
+
       <!-- /.box -->
     </div>
     <!--/.col (right) -->

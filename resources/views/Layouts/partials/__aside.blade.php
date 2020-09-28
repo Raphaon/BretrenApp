@@ -25,7 +25,7 @@
           <!-- sidebar menu: : style can be found in sidebar.less -->
           <ul class="sidebar-menu" data-widget="tree">
             <li class="header">MAIN NAVIGATION</li>
-           ht <li><a href="{{ route('home')}}"><i class="fa fa-home"></i> <span>Home</span></a></li>
+            <li><a href="{{ route('home')}}"><i class="fa fa-home"></i> <span>Home</span></a></li>
             <li><a href="{{route('nation')}}"><i class="fa fa-circle-o text-red"></i> <span>Area</span></a></li>
             <li class="active treeview">
               <a href="#">

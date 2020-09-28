@@ -1,4 +1,4 @@
-@extends('Layouts/master')
+@extends('Layouts/masterPages')
 
 @section('container')
 
@@ -32,8 +32,8 @@
                         <span class="info-box-icon"><i class="fa fa-bookmark-o"></i></span>
 
                         <div class="info-box-content">
-                            <span class="info-box-text">Bookmarks</span>
-                            <span class="info-box-number">41,410</span>
+                            <span class="info-box-text">Member(s) </span>
+                            <span class="info-box-number">{{"9 900"}}</span>
 
                             <div class="progress">
                                 <div class="progress-bar" style="width: 70%"></div>
@@ -103,9 +103,3 @@
 
 
 @endsection
-
-
-
-
-
-

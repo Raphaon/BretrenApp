@@ -1,4 +1,4 @@
-@extends('Layouts/master')
+@extends('Layouts/masterPages')
 @section('container')
 <h1>Welcome to the {{  $district->districtName }} District Office </h1>
 {{

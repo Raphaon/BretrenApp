@@ -1,0 +1,17 @@
+@foreach ($areas as $area)
+    code : {{$area->areaCode}}<br>
+    Nom  : {{ $area->areaName }}<br>
+    City : {{ $area->areaCity}}
+    <a href="{{ route('area', ['areaCode'=> $area->areaCode ])}}">Open</a>
+    <hr>
+@endforeach
+<h1 >
+       Welcome to the national office of the Full Gospel Mission in Cameroun
+</h1>
+
+
+
+
+
+My Maps
+

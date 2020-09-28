@@ -24,10 +24,16 @@ Route::get("/nation", [
     "uses" => "controlles\NationController@index",
     "as" => "nation"
     ]);
+
+
+
+
+
 Route::get('/member/{MatriMember}', [
     "uses" => "controlles\MemberController@index",
     "as" => "member"
     ]);
+
 Route::get('/areas', "controlles\AreaController@index");
 
 Route::get('/area-details/{areaCode}', [
@@ -78,6 +84,17 @@ Route::get('/login', [
     "as" => "login"
 ]);
 
+Route::get('/logout', [
+    "uses" => "controlles\UserController@logout",
+    "as" => "logout"
+]);
+
+
+Route::post('/login', [
+    "uses" => "controlles\UserController@auth",
+    "as" => "auth"
+]);
+
 
 Route::get('/member', [
     "uses" => "controlles\MemberController@profile",
@@ -88,3 +105,17 @@ Route::get('/district', [
     "uses" => "controlles\DistrictController@index",
     "as" => "District"
 ]);
+
+
+
+
+Route::get("/register", [
+    "uses" => "controlles\UserController@register",
+    "as" => "registrationForm"
+    ]);
+
+
+    Route::get("/UserHome", [
+        "uses" => "controlles\UserController@userHome",
+        "as" => "userHome"
+        ]);

@@ -4,6 +4,11 @@
 
 
 <section class="content">
+
+
+
+
+
         <!-- Small boxes (Stat box) -->
         <div class="row">
           <div class="col-lg-3 col-xs-6">
@@ -11,7 +16,6 @@
             <div class="small-box bg-aqua">
               <div class="inner">
                 <h3>{{ $nbre_region.  "  Areas" }}</h3>
-
                 <p>Area</p>
               </div>
               <div class="icon">
@@ -69,7 +73,8 @@
         </div>
         <!-- /.row -->
         <!-- Main row -->
-
+        <hr>
+        <button type="button"  class="btn btn-primary">(+) ADD AREA</button><br><br>
         <div class="row">
               @foreach ($areas as $area)
               <div class="col-lg-3 col-xs-2">

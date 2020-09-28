@@ -1,4 +1,4 @@
-@extends('Layouts/master')
+@extends('Layouts/masterPages')
 @section('container')
 <h1>
             {{
@@ -14,6 +14,3 @@
 
         <a href="{{ route('transfertAmember', ['codeMember' => 'test']) }}">Transfer à member</a>
 @endsection
-
-
-

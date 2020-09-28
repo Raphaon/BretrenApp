@@ -4,8 +4,8 @@
 <div class="wrapper">
 
 @include('Layouts/partials/__header_nav')
-  <!-- Left side column. contains the logo and sidebar    -->
-@include('Layouts/partials/__asideUser')
+  <!-- Left side column. contains the logo and sidebar -->
+  @include('Layouts/partials/__asideUser')
 
   <!-- Content Wrapper. Contains page content -->
   <div class="content-wrapper">

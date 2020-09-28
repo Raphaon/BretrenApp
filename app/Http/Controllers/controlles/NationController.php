@@ -10,11 +10,19 @@ class NationController extends Controller
 
     public function home()
     {
+        //dd(session('userConnect'));
+        if(session('userConnect') ==null OR !session('userConnect')->isAuth())    
+                return redirect('login');
+        
+       
         return view("welcome");
     }
     public function index()
     {
+        //dd(session('userConnect')->isAuth());
 
+        if (session('userConnect') == null or !session('userConnect')->isAuth())
+            return redirect('login');
         $myFunction = new appFunction();
         $nbre_region  = $myFunction->getNbreArea();
         $areas  = $myFunction->getArea();
